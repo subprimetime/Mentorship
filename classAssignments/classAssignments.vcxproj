@@ -94,6 +94,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="structAssignment.cpp" />
+    <ClCompile Include="struct_elmira.cpp" />
+    <ClCompile Include="struct_erika.cpp" />
+    <ClCompile Include="struct_giang.cpp" />
+    <ClCompile Include="struct_marcus.cpp" />
+    <ClCompile Include="struct_negin.cpp" />
     <ClCompile Include="unit_tests.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
