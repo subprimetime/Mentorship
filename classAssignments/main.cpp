@@ -8,7 +8,7 @@
 #include "declarations.h"
 
 using namespace std;
-//test
+
 int main(int argc, char** argv)
 {
 
