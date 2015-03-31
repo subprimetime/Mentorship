@@ -11,7 +11,7 @@ int PrintStruct(struct person p);
 struct person
 {
 
-	char name[50];
+	char name[10];
 	float salary;
 
 }; 
