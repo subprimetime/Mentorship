@@ -12,9 +12,9 @@ int main(int argc, char** argv)
 
 
 	testing::InitGoogleTest(&argc, argv);
-	
+	functionCreateStruct();
 
-
+	// Hello Class
 	RUN_ALL_TESTS();
 	std::getchar(); // keep console window open until Return keystroke
 }
