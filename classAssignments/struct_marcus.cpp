@@ -27,34 +27,46 @@ using namespace std;
 		UpdateSalary(p); // Call to function that updates salary of object p
 	}
 
-	int UpdateSalary(struct person *p)
+	int UpdateSalary(struct person *p) // Updates Salary to person p
 
 	{
-
 		float newSalary = 125;
 		for (int i = 0; i < 10; i++)
 		{
 			//p[i].salary = 125; //  This works!! But too easy.
 
-			//strcpy(p[i].salary, newSalary);
 			memcpy(&p[i].salary, &newSalary, sizeof(p[i].salary));
-		}
 
-		mar_PrintStruct(p); //calls PrintStruct with struct person
-		{
-			return 0;
+			PrintStruct(p[i]); //calls PrintStruct passing only one elements.
 		}
+			{
+			mar_PrintStruct(p);
+			}
+				{
+					return 0;
+				}
+	
 	}
 
-	int mar_PrintStruct(struct person *p)
+	int PrintStruct(struct person p) // function accepts only one array element at a time.
 	{
+		{
+			cout << "The Salary for " << p.name << "  is:" << p.salary << "\n";
+		}
+	
+			{
+			return 0;
+			}
+	}
 
+
+	int mar_PrintStruct(struct person *p) // Function to print when whole p.name array is passed.
+	{
 
 		for (int i = 0; i < 10; i++)
 		{
-			//cout << "The Salary for " << (p[i].name << "  is:" << p[i].salary << "\n";
-
-			cout << "The Salary for " << p[i].name << "  is:" << *(&p[i].salary) << "\n";
+			
+			cout << "The Salary for " << p[i].name << "  is:" << p[i].salary << "\n";
 		}
 		return 0;
 	}
