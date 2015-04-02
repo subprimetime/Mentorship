@@ -6,7 +6,7 @@
 
 void functionCreateStruct();
 int UpdateSalary(struct person *p);
-int PrintStruct(struct person p);
+int PrintStruct(struct person *p);
 
 struct person
 {
