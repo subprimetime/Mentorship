@@ -6,7 +6,8 @@
 
 void functionCreateStruct();
 int UpdateSalary(struct person *p);
-int PrintStruct(struct person *p);
+int PrintStruct(struct person p);
+int mar_PrintStruct(struct person *p);
 
 struct person
 {
@@ -14,6 +15,6 @@ struct person
 	char name[10];
 	float salary;
 
-}; 
+};
 
 #endif
