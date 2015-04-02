@@ -28,13 +28,13 @@ using namespace std;
 
 	{
 
-		//float newSalary = 125;
+		float newSalary = 125;
 		for (int i = 0; i < 10; i++)
 		{
-			p[i].salary = 125; //  This works!! But too easy.
+			//p[i].salary = 125; //  This works!! But too easy.
 
-			//strcpy_s(p[i].salary, newSalary);
-			//memcpy(&p[i].salary, (float *)&newSalary, sizeof(p[i].salary));
+			//strcpy(p[i].salary, newSalary);
+			memcpy(&p[i].salary, &newSalary, sizeof(p[i].salary));
 		}
 
 		PrintStruct(p); //calls PrintStruct with struct person
@@ -45,10 +45,10 @@ using namespace std;
 
 	int PrintStruct(struct person *p)
 	{
-
+		
 		for (int i = 0; i < 10; i++)
 		{
-			cout << "The Salary for " << p[i].name << "  is:" << p[i].salary << "\n";
+			cout << "The Salary for " << p[i].name << "  is:" << *(&p[i].salary) << "\n";
 		}
 		return 0;
 	}
