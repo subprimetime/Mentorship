@@ -1,11 +1,14 @@
 #include"stdafx.h"
+
+using namespace std;
+
+
 #include <iostream>
 #include <string.h>
 #include "declarations.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-using namespace std;
 
 
 	void functionCreateStruct()
@@ -37,17 +40,20 @@ using namespace std;
 			memcpy(&p[i].salary, &newSalary, sizeof(p[i].salary));
 		}
 
-		PrintStruct(p); //calls PrintStruct with struct person
+		mar_PrintStruct(p); //calls PrintStruct with struct person
 		{
 			return 0;
 		}
 	}
 
-	int PrintStruct(struct person *p)
+	int mar_PrintStruct(struct person *p)
 	{
-		
+
+
 		for (int i = 0; i < 10; i++)
 		{
+			//cout << "The Salary for " << (p[i].name << "  is:" << p[i].salary << "\n";
+
 			cout << "The Salary for " << p[i].name << "  is:" << *(&p[i].salary) << "\n";
 		}
 		return 0;
