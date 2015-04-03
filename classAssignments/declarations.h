@@ -6,8 +6,8 @@
 
 void functionCreateStruct();
 int UpdateSalary(struct person *p);
-int PrintStruct(struct person p);
-int mar_PrintStruct(struct person *p);
+int PrintStruct(struct person p); //  FYI - This function only accepts one element of an array.
+char mar_PrintStruct(struct person *p); // FYI this accepts a full array to be passed into it.
 
 struct person
 {
