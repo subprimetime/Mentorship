@@ -40,7 +40,8 @@ using namespace std;
 			PrintStruct(p[i]); //calls PrintStruct passing only one elements.
 		}
 			{
-			mar_PrintStruct(p);
+
+				mar_PrintStruct(p);
 			}
 				{
 					return 0;
@@ -53,14 +54,14 @@ using namespace std;
 		{
 			cout << "The Salary for " << p.name << "  is:" << p.salary << "\n";
 		}
+
 	
-			{
-			return 0;
-			}
+				{
+				return 0;
+				}
 	}
 
-
-	int mar_PrintStruct(struct person *p) // Function to print when whole p.name array is passed.
+	char mar_PrintStruct(struct person *p) // Function to print when whole p.name array is passed.
 	{
 
 		for (int i = 0; i < 10; i++)
@@ -68,5 +69,9 @@ using namespace std;
 			
 			cout << "The Salary for " << p[i].name << "  is:" << p[i].salary << "\n";
 		}
+		
 		return 0;
 	}
+	
+	
+	
