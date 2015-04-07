@@ -16,8 +16,8 @@ char er_PrintStruct(struct person *p);
 struct person
 {
 
-	char name[10];
-	float salary;
+	char name[10];// change to pointer char* name (Person2)  dynamic memory allocation (malloc) free strcpy
+	float salary; // 
 
 };
 
