@@ -7,7 +7,7 @@
 
 using namespace std;
 
-/*!This function creates an struct person object (p[10]) and adds 10 names to it.
+/*!This function creates a struct person object (p[10]) and adds 10 names to it.
 
 */
 	void functionCreateStruct()
