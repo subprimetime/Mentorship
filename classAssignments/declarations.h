@@ -21,4 +21,11 @@ struct person
 
 };
 
+
+struct person2
+{
+	char name[10];// change to pointer char* name (Person2)  dynamic memory allocation (malloc) free strcpy
+	float salary; // 
+
+};
 #endif
