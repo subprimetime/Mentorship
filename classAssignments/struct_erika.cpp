@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void er_functionCreateStruct()
+void er_functionsCreateStruct()
 
 {
 	struct person p[10]; //array of 10 people
