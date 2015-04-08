@@ -1,6 +1,24 @@
+/////////////////////////////////////////////////////////////////////////////
+
+
+Please create a windows environment variable for gtest.
+Control Panel\All Control Panel Items\System
+- Environmental Variables
+- Add a new system variable  
+name = gtest   
+Variable = whatever your directory for gtest is (mine was C:\gtest-1.7.0\, yours maybe something like C:\gtest\gtest-1.7.0\).
+
+
+in your project properties 
+- c\c++ - Additional Include Directories   $(gtest)\include
+- Linker - General - Additional Library Directories   $(gtest)\msvc\gtest\Debug
+
+/////////////////////////////////////////////////////////////////////////////
+
 ========================================================================
     CONSOLE APPLICATION : classAssignments Project Overview
 ========================================================================
+
 
 AppWizard has created this classAssignments application for you.
 
